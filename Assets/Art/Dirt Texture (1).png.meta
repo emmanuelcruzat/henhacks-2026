@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 25e3e365ad48c0f4491ea16919dea83b
+guid: 7063e386cfa0b5b4cb6a82a35fe33489
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1796492108844775908
-    second: Dirt_Path_Up_Down_1_0
+      213: -7103351016253944626
+    second: Dirt Texture (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dirt_Path_Up_Down_1_0
+      name: Dirt Texture (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c16c38af1f39117e0800000000000000
-      internalID: -1796492108844775908
+      spriteID: ecc0649c2e3db6d90800000000000000
+      internalID: -7103351016253944626
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dirt_Path_Up_Down_1_0: -1796492108844775908
+      Dirt Texture (1)_0: -7103351016253944626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
