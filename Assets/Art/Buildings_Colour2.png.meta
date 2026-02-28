@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 4a3a342533e572e43aa3d2565b942297
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3544102367511405302
+    second: Buildings_Colour2_0
+  - first:
+      213: -6417800878874479463
+    second: Buildings_Colour2_1
+  - first:
+      213: 8620266067875716094
+    second: Buildings_Colour2_2
+  - first:
+      213: 5244224980410469512
+    second: Buildings_Colour2_3
+  - first:
+      213: -3669178479950338130
+    second: Buildings_Colour2_4
+  - first:
+      213: 6737468432224697391
+    second: Buildings_Colour2_5
+  - first:
+      213: -8233717543011486902
+    second: Buildings_Colour2_6
+  - first:
+      213: -8810089656076621935
+    second: Buildings_Colour2_7
+  - first:
+      213: 3968142697561067902
+    second: Buildings_Colour2_8
+  - first:
+      213: -9087493206290053319
+    second: Buildings_Colour2_9
+  - first:
+      213: 4011492235960883457
+    second: Buildings_Colour2_10
+  - first:
+      213: -2230044720154521124
+    second: Buildings_Colour2_11
+  - first:
+      213: -2577504514588395667
+    second: Buildings_Colour2_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Buildings_Colour2_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 60
+        width: 89
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d9cd89ca1d0dec0800000000000000
+      internalID: -3544102367511405302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 84
+        width: 106
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9943f778a146fe6a0800000000000000
+      internalID: -6417800878874479463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_2
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 75
+        width: 111
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbd51d015651a770800000000000000
+      internalID: 8620266067875716094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_3
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 82
+        width: 102
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c8897a5da37c840800000000000000
+      internalID: 5244224980410469512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_4
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 38
+        width: 132
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea76d05dc95741dc0800000000000000
+      internalID: -3669178479950338130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_5
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 46
+        width: 129
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c392ca7db408d50800000000000000
+      internalID: 6737468432224697391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_6
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 27
+        width: 112
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43f5ebc485fbbd80800000000000000
+      internalID: -8233717543011486902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_7
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 3
+        width: 103
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197a53ab2264cb580800000000000000
+      internalID: -8810089656076621935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_8
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 33
+        width: 98
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71103262cca11730800000000000000
+      internalID: 3968142697561067902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_9
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 20
+        width: 73
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9374e44931db2e180800000000000000
+      internalID: -9087493206290053319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_10
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 19
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1099faf4feeaba730800000000000000
+      internalID: 4011492235960883457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_11
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 20
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd154fd642a4d01e0800000000000000
+      internalID: -2230044720154521124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buildings_Colour2_12
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 20
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d673ef8dc4dda3cd0800000000000000
+      internalID: -2577504514588395667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Buildings_Colour2_0: -3544102367511405302
+      Buildings_Colour2_1: -6417800878874479463
+      Buildings_Colour2_10: 4011492235960883457
+      Buildings_Colour2_11: -2230044720154521124
+      Buildings_Colour2_12: -2577504514588395667
+      Buildings_Colour2_2: 8620266067875716094
+      Buildings_Colour2_3: 5244224980410469512
+      Buildings_Colour2_4: -3669178479950338130
+      Buildings_Colour2_5: 6737468432224697391
+      Buildings_Colour2_6: -8233717543011486902
+      Buildings_Colour2_7: -8810089656076621935
+      Buildings_Colour2_8: 3968142697561067902
+      Buildings_Colour2_9: -9087493206290053319
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
