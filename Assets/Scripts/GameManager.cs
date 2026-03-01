@@ -26,11 +26,19 @@ public class GameManager : MonoBehaviour
     private Building buildingToPlace;
     public GameObject grid;
 
-    public int sustainability;
+    public float Health, MaxHealth;
+
+    [SerializeField]
+    private sustainabilityBarUI healthBar; 
 
     public CustomCursor customCursor;
 
     public Tile[] tiles;
+
+    private void Start()
+    {
+        healthBar.SetMaxHealth(MaxHealth);
+    }
 
     private void Update()
     {
@@ -73,8 +81,25 @@ public class GameManager : MonoBehaviour
         {
             newHouseDisplay.fontSize = 24;
         }
+        // health test
+        if (Input.GetKeyDown("d"))
+        {
+            SetHealth(-1f);
+        }
+        if (Input.GetKeyDown("a"))
+        {
+            SetHealth(1f);
+        }
+
     }
 
+    public void SetHealth(float healthChange)
+    {
+        Health += healthChange;
+        Health = Mathf.Clamp(Health, 0, MaxHealth);
+
+        healthBar.SetHealth(Health);
+    }
     public void BuyBuilding(Building building)
     {
         if (gold >= building.cost)
