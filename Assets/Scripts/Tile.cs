@@ -18,18 +18,18 @@ public class Tile : MonoBehaviour
         normalScale = transform.localScale;
     }
 
-    private void OnEnable()
-    {
-        scaleRoutine = StartCoroutine(ScaleLoop());
-    }
+    //private void OnEnable()
+    //{
+    //    scaleRoutine = StartCoroutine(ScaleLoop());
+    //}
 
-    private void OnDisable()
-    {
-        if (scaleRoutine != null)
-            StopCoroutine(scaleRoutine);
+    //private void OnDisable()
+    //{
+    //    if (scaleRoutine != null)
+    //        StopCoroutine(scaleRoutine);
 
-        transform.localScale = normalScale; // reset when disabled
-    }
+    //    transform.localScale = normalScale; // reset when disabled
+    //}
 
     private void Update()
     {

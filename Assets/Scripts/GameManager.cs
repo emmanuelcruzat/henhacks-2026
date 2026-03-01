@@ -42,6 +42,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if (Camera.main == null)
+        {
+            Debug.LogError("Camera.main is NULL — camera is not tagged MainCamera");
+        }
         goldDisplay.text = gold.ToString();
         waterDisplay.text = water.ToString();
         energyDisplay.text = energy.ToString();
@@ -51,7 +55,37 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && buildingToPlace != null) 
         {
+
             Tile nearestTile = null;
+            //if (tiles == null)
+            //{
+            //    Debug.LogError("tiles array is NULL");
+            //    return;
+            //}
+
+            //if (tiles.Length == 0)
+            //{
+            //    Debug.LogError("tiles array is EMPTY");
+            //    return;
+            //}
+
+            //if (nearestTile == null)
+            //{
+            //    Debug.LogError("nearestTile is NULL");
+            //    return;
+            //}
+
+            //if (!grid)
+            //{
+            //    Debug.LogError("grid is NULL");
+            //    return;
+            //}
+
+            //if (!customCursor)
+            //{
+            //    Debug.LogError("customCursor is NULL");
+            //    return;
+            //}
             float shortestDistance = float.MaxValue;
             foreach(Tile tile in tiles)
             {
@@ -63,7 +97,7 @@ public class GameManager : MonoBehaviour
                     nearestTile = tile;
                 }
             }
-            if(nearestTile.isOccupied == false)
+            if (nearestTile.isOccupied == false)
             {
                 Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
                 buildingToPlace = null;

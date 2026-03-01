@@ -20,6 +20,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("Luke's Scene");
     }
 
+    public void StartMenu()
+    {
+        SceneManager.LoadScene("Intro Scene");
+    }
+
     public void Credits()
     {
         SceneManager.LoadScene("Credits");
