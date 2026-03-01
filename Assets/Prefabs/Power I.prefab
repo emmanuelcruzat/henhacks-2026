@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 8954722238008933613}
   - component: {fileID: 3288037806463663163}
   - component: {fileID: 451486412090925838}
+  - component: {fileID: 9022773869773323057}
+  - component: {fileID: -8874183436204457130}
   m_Layer: 0
-  m_Name: Gold Mine
+  m_Name: Power I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,12 +84,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3544102367511405302, guid: 4a3a342533e572e43aa3d2565b942297, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 632cdf907a1342342851b3438d5e6b3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.89, y: 1.06}
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -107,4 +109,74 @@ MonoBehaviour:
   cost: 20
   increaseAmount: 5
   timeBtwIncreases: 1
-  buildingType: 0
+  buildingType: 5
+--- !u!114 &9022773869773323057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4048704398046635324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba6671021d26b6489062a043eaf2ae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingClick
+  info:
+    buildingName: 'Coal-Fired Power Plant '
+    buildingDescription: Burns coal to heat steam, turning a turbine to create electricity.
+      Gets the job done, but is terrible for the atmosphere...
+    icon: {fileID: 21300000, guid: 632cdf907a1342342851b3438d5e6b3c, type: 3}
+    upgrades:
+    - upgradeName: Oil-Fired Power Plant
+      cost: 35
+      description: Burns oil to heat steam, turning a turbine to create electricity.
+        Cleaner than coal plants.
+      successorPrefab: {fileID: 4048704398046635324, guid: 03079b3e85e067145bb6f6f62b0c2576, type: 3}
+    currentTier: 0
+--- !u!61 &-8874183436204457130
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4048704398046635324}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 1.6}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.6, y: 1.6}
+  m_EdgeRadius: 0
