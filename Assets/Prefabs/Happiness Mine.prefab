@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3288037806463663163}
   - component: {fileID: 451486412090925838}
   m_Layer: 0
-  m_Name: Basic_Building
+  m_Name: Happiness Mine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105,5 +105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   cost: 20
-  goldIncrease: 5
+  increaseAmount: 5
   timeBtwIncreases: 1
+  buildingType: 4

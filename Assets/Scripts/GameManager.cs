@@ -9,6 +9,19 @@ public class GameManager : MonoBehaviour
 {
     public int gold;
     public TextMeshProUGUI goldDisplay;
+    public int water;
+    public TextMeshProUGUI waterDisplay;
+    public int energy;
+    public TextMeshProUGUI energyDisplay;
+    public int happiness;
+    public TextMeshProUGUI HappinessDisplay;
+    public int ore;
+    public TextMeshProUGUI oreDisplay;
+    public int food;
+    public TextMeshProUGUI foodDisplay;
+    public int housingOptions;
+    public TextMeshProUGUI newHouseDisplay;
+    public GameObject newHouseSelect;
 
     private Building buildingToPlace;
     public GameObject grid;
@@ -20,8 +33,13 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         goldDisplay.text = gold.ToString();
+        waterDisplay.text = water.ToString();
+        energyDisplay.text = energy.ToString();
+        HappinessDisplay.text = happiness.ToString();
+        oreDisplay.text = ore.ToString();
+        foodDisplay.text = food.ToString();
 
-        if(Input.GetMouseButtonDown(0) && buildingToPlace != null) 
+        if (Input.GetMouseButtonDown(0) && buildingToPlace != null) 
         {
             Tile nearestTile = null;
             float shortestDistance = float.MaxValue;
@@ -45,6 +63,14 @@ public class GameManager : MonoBehaviour
                 Cursor.visible = true;
             }
         }
+        if (housingOptions <= 9)
+        {
+            newHouseDisplay.fontSize = 32;
+        }
+        else if (housingOptions <= 99 && housingOptions >= 10)
+        {
+            newHouseDisplay.fontSize = 24;
+        }
     }
 
     public void BuyBuilding(Building building)
@@ -59,5 +85,9 @@ public class GameManager : MonoBehaviour
             buildingToPlace = building;
             grid.SetActive(true);
         }
+    }
+    public void SelectHouse()
+    {
+        newHouseSelect.SetActive(newHouseSelect.activeSelf);
     }
 }

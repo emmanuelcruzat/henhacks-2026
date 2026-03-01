@@ -7,10 +7,21 @@ public class Building : MonoBehaviour
 {
     public int cost;
 
-    public int goldIncrease;
+    public int increaseAmount;
 
     public float timeBtwIncreases;
     private float nextIncreaseTime;
+
+    public enum ResourceType
+    {
+        Gold,
+        Food,
+        Ore,
+        Water,
+        Happiness,
+        Energy
+    }
+    public ResourceType buildingType;
 
     private GameManager gm;
 
@@ -24,7 +35,31 @@ public class Building : MonoBehaviour
         if (Time.time > nextIncreaseTime)
         {
             nextIncreaseTime = Time.time + timeBtwIncreases;
-            gm.gold += goldIncrease;
+            ApplyResourceIncrease();
+        }
+    }
+    public void ApplyResourceIncrease()
+    {
+        switch (buildingType)
+        {
+            case ResourceType.Gold:
+                gm.gold += increaseAmount;
+                break;
+            case ResourceType.Water:
+                gm.water += increaseAmount;
+                break;
+            case ResourceType.Energy:
+                gm.energy += increaseAmount;
+                break;
+            case ResourceType.Food:
+                gm.food += increaseAmount;
+                break;
+            case ResourceType.Ore:
+                gm.ore += increaseAmount;
+                break;
+            case ResourceType.Happiness:
+                gm.happiness += increaseAmount;
+                break;
         }
     }
 }
