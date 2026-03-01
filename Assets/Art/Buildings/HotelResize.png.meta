@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 3f3a43589badf0a408a10b28d43a9f48
+guid: d41a62786d602fd4a9762e52da6a4e8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3763752930381237044
-    second: New Piskel (2)_0
-  - first:
-      213: -445332791505162358
-    second: New Piskel (2)_1
+      213: 696538519766521500
+    second: HotelResize_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (2)_0
+      name: HotelResize_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 305
-        height: 201
+        width: 191
+        height: 276
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43b85b559598b3430800000000000000
-      internalID: 3763752930381237044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Piskel (2)_1
-      rect:
-        serializedVersion: 2
-        x: 319
-        y: 0
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8f60838f2cd1d9f0800000000000000
-      internalID: -445332791505162358
+      spriteID: c965f03e71a9aa900800000000000000
+      internalID: 696538519766521500
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Piskel (2)_0: 3763752930381237044
-      New Piskel (2)_1: -445332791505162358
+      HotelResize_0: 696538519766521500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

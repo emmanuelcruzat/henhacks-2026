@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9022773869773323057}
   - component: {fileID: -8874183436204457130}
   m_Layer: 0
-  m_Name: Well I
+  m_Name: Motel4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 3228a8f1ad2407246a30347a0ba334f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 49e687c90a581dc40947a0a5c7299a23, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,9 +107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   cost: 20
-  increaseAmount: 3
+  increaseAmount: 25
   timeBtwIncreases: 1
-  buildingType: 3
+  buildingType: 5
 --- !u!114 &9022773869773323057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,17 +123,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuildingClick
   info:
-    buildingName: 'Coal-Fired Power Plant '
-    buildingDescription: Burns coal to heat steam, turning a turbine to create electricity.
-      Gets the job done, but is terrible for the atmosphere...
-    icon: {fileID: 21300000, guid: 632cdf907a1342342851b3438d5e6b3c, type: 3}
-    upgrades:
-    - upgradeName: Oil-Fired Power Plant
-      cost: 35
-      description: Burns oil to heat steam, turning a turbine to create electricity.
-        Cleaner than coal plants.
-      successorPrefab: {fileID: 4048704398046635324, guid: 7810b60c448fbe04080a0dfcf85266de, type: 3}
-    currentTier: 0
+    buildingName: Resort Hotel
+    buildingDescription: A five-star resort is sure to bring vast crowds of people
+      to our desert town.
+    icon: {fileID: 21300000, guid: 49e687c90a581dc40947a0a5c7299a23, type: 3}
+    upgrades: []
+    currentTier: 3
 --- !u!61 &-8874183436204457130
 BoxCollider2D:
   m_ObjectHideFlags: 0
