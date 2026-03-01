@@ -1,44 +1,102 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Text;
 
 public class UpgradePopupUI : MonoBehaviour
 {
+    [Header("Root")]
     public GameObject panel;
+
+    // Optional fullscreen blocker behind popup to stop clicks
+    public GameObject blocker;
+
+    [Header("Text")]
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI descText;
     public TextMeshProUGUI bodyText;
+    public Image iconImage;
+
+    [Header("Buttons")]
     public Button closeButton;
+    public Button upgradeButton; // single upgrade button (upgrade index 0)
+
+    private BuildingClick currentBuilding;
 
     void Awake()
     {
-        closeButton.onClick.AddListener(Hide);
+        if (closeButton != null) closeButton.onClick.AddListener(Hide);
+        if (upgradeButton != null) upgradeButton.onClick.AddListener(() => UpgradePressed(0));
+
         Hide();
     }
 
-    public void Show(BuildingClick.BuildingInfo data)
+    public bool IsOpen => panel != null && panel.activeSelf;
+
+    public void Show(BuildingClick building)
     {
-        if (data == null) return;
+        if (building == null || building.info == null) return;
+
+        currentBuilding = building;
+
+        if (blocker != null) blocker.SetActive(true);
 
         panel.SetActive(true);
-        titleText.text = data.buildingName;
-        descText.text = data.buildingDescription;
+        panel.transform.SetAsLastSibling(); // ensure on top
 
-        // Build a nice list
-        System.Text.StringBuilder sb = new System.Text.StringBuilder();
-        foreach (var up in data.upgrades)
+        // Fill UI
+        var data = building.info;
+
+        if (titleText != null) titleText.text = data.buildingName;
+        if (descText != null) descText.text = data.buildingDescription;
+        if (iconImage != null) iconImage.sprite = data.icon;
+
+        if (bodyText != null)
         {
-            sb.AppendLine($"{up.upgradeName}  (Cost: {up.cost})");
-            if (!string.IsNullOrWhiteSpace(up.description))
-                sb.AppendLine($"  {up.description}");
-            sb.AppendLine();
+            var sb = new StringBuilder();
+
+            if (data.upgrades == null || data.upgrades.Length == 0)
+            {
+                sb.AppendLine("No upgrades available.");
+            }
+            else
+            {
+                for (int i = 0; i < data.upgrades.Length; i++)
+                {
+                    var up = data.upgrades[i];
+                    sb.AppendLine($"{i+1}. {up.upgradeName}  (Cost: {up.cost})");
+                    if (!string.IsNullOrWhiteSpace(up.description))
+                        sb.AppendLine($"   {up.description}");
+                    if (up.successorPrefab == null)
+                        sb.AppendLine("   [Missing successor prefab]");
+                    sb.AppendLine();
+                }
+            }
+
+            bodyText.text = sb.ToString().TrimEnd();
         }
 
-        bodyText.text = sb.ToString().TrimEnd();
+        // Enable/disable upgrade button (index 0)
+        if (upgradeButton != null)
+        {
+            bool canUpgrade = data.upgrades != null &&
+                              data.upgrades.Length > 0 &&
+                              data.upgrades[0].successorPrefab != null;
+
+            upgradeButton.interactable = canUpgrade;
+        }
     }
 
     public void Hide()
     {
-        panel.SetActive(false);
+        if (panel != null) panel.SetActive(false);
+        if (blocker != null) blocker.SetActive(false);
+        currentBuilding = null;
+    }
+
+    public void UpgradePressed(int upgradeIndex)
+    {
+        if (currentBuilding == null) return;
+        currentBuilding.ApplyUpgrade(upgradeIndex);
     }
 }

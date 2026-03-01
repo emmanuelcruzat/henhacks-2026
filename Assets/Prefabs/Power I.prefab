@@ -132,6 +132,8 @@ MonoBehaviour:
       cost: 35
       description: Burns oil to heat steam, turning a turbine to create electricity.
         Cleaner than coal plants.
+      successorPrefab: {fileID: 4048704398046635324, guid: 03079b3e85e067145bb6f6f62b0c2576, type: 3}
+    currentTier: 0
 --- !u!61 &-8874183436204457130
 BoxCollider2D:
   m_ObjectHideFlags: 0

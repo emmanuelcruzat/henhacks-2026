@@ -123,15 +123,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuildingClick
   info:
-    buildingName: 'Coal-Fired Power Plant '
-    buildingDescription: Burns coal to heat steam, turning a turbine to create electricity.
-      Gets the job done, but is terrible for the atmosphere...
-    icon: {fileID: 21300000, guid: 632cdf907a1342342851b3438d5e6b3c, type: 3}
+    buildingName: Gas-Fired Power Plant
+    buildingDescription: Burns natural gas to heat steam, turning a turbine create
+      electricity. The cleanest fossil fuel and is commonly used the world over.
+    icon: {fileID: 21300000, guid: f0ea6d344119d6e4ea36b861c2f1c308, type: 3}
     upgrades:
-    - upgradeName: Oil-Fired Power Plant
+    - upgradeName: Solar Power Plant
       cost: 35
-      description: Burns oil to heat steam, turning a turbine to create electricity.
-        Cleaner than coal plants.
+      description: Harness the power of the sun to generate electrcity directly!
+        No emissions, just need sunlight and open space.
+      successorPrefab: {fileID: 4048704398046635324, guid: a6fea3386f3bdf442ac5c537300abd6d, type: 3}
+    currentTier: 2
 --- !u!61 &-8874183436204457130
 BoxCollider2D:
   m_ObjectHideFlags: 0
