@@ -109,7 +109,7 @@ MonoBehaviour:
   cost: 20
   increaseAmount: 8
   timeBtwIncreases: 1
-  buildingType: 3
+  buildingType: 4
 --- !u!114 &9022773869773323057
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -132,7 +132,7 @@ MonoBehaviour:
       cost: 100
       description: A water tower will store large amounts of water, providing vital
         protection during droughts and dry seasons.
-      successorPrefab: {fileID: 4048704398046635324, guid: a6fea3386f3bdf442ac5c537300abd6d, type: 3}
+      successorPrefab: {fileID: 4048704398046635324, guid: 9871d715c2730574b9673cf1069ebf9a, type: 3}
     currentTier: 2
 --- !u!61 &-8874183436204457130
 BoxCollider2D:
