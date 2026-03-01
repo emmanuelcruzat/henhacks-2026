@@ -388,7 +388,7 @@ MonoBehaviour:
         m_MethodName: BuyBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 451486412090925838, guid: 088f587c2032c8946b4139785f522a8e, type: 3}
+          m_ObjectArgument: {fileID: 451486412090925838, guid: f4cfebc220c169a4089009d6dd5e5b9c, type: 3}
           m_ObjectArgumentAssemblyTypeName: Building, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -49122,6 +49122,7 @@ MonoBehaviour:
   newHouseDisplay: {fileID: 1012400776}
   newHouseSelect: {fileID: 0}
   grid: {fileID: 809540217}
+  sustainability: 0
   customCursor: {fileID: 1287388684}
   tiles:
   - {fileID: 1228397351}
@@ -56560,7 +56561,7 @@ MonoBehaviour:
         m_MethodName: BuyBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 451486412090925838, guid: 0168deeb2f326194a83bd489ee423169, type: 3}
+          m_ObjectArgument: {fileID: 451486412090925838, guid: 4a63e5bb5238c2e418a4429961bbf549, type: 3}
           m_ObjectArgumentAssemblyTypeName: Building, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -60185,7 +60186,7 @@ MonoBehaviour:
         m_MethodName: BuyBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 451486412090925838, guid: 6032c770e3d41fd4d8a559cac0b5cd41, type: 3}
+          m_ObjectArgument: {fileID: 451486412090925838, guid: 68e59bc881fc92845a5d9319f566acd3, type: 3}
           m_ObjectArgumentAssemblyTypeName: Building, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
