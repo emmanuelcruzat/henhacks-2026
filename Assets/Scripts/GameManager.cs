@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     private Building buildingToPlace;
     public GameObject grid;
 
+    public int sustainability;
+
     public CustomCursor customCursor;
 
     public Tile[] tiles;
