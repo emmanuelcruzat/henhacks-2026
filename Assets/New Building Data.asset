@@ -14,9 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BuildingData
   buildingName: Mine
   upgrades:
-  - name: a
-    description: a
-    cost: 0
-  - name: a
+  - name: 
     description: a
     cost: 0

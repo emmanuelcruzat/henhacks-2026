@@ -15,18 +15,18 @@ public class UpgradePopupUI : MonoBehaviour
         Hide();
     }
 
-    public void Show(BuildingData building)
+    public void Show(BuildingClick.BuildingInfo data)
     {
-        if (building == null) return;
+        if (data == null) return;
 
         panel.SetActive(true);
-        titleText.text = building.buildingName + " Upgrades";
+        titleText.text = data.buildingName + " Upgrades";
 
         // Build a nice list
         System.Text.StringBuilder sb = new System.Text.StringBuilder();
-        foreach (var up in building.upgrades)
+        foreach (var up in data.upgrades)
         {
-            sb.AppendLine($"• {up.name}  (Cost: {up.cost})");
+            sb.AppendLine($"• {up.upgradeName}  (Cost: {up.cost})");
             if (!string.IsNullOrWhiteSpace(up.description))
                 sb.AppendLine($"  {up.description}");
             sb.AppendLine();
