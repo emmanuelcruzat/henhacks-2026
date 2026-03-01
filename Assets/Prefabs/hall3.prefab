@@ -30,8 +30,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
     - upgradeName: City Hall
       cost: 100
       description: Apparently the new beeg dome on top lets you build Lvl 4 buildings.
-      successorPrefab: {fileID: 4048704398046635324}
+      successorPrefab: {fileID: 4048704398046635324, guid: 99c6a641d20193f4b97c32ace2a7e3ba, type: 3}
     currentTier: 2
 --- !u!61 &-8874183436204457130
 BoxCollider2D:
@@ -177,5 +177,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6, y: 1.6}
+  m_Size: {x: 2.56, y: 2.56}
   m_EdgeRadius: 0
