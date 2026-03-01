@@ -19,7 +19,6 @@ public class MayorDialogue : MonoBehaviour
 
     void Update()
     {
-        // ✅ New Input System way
         if (Keyboard.current != null && Keyboard.current.enterKey.wasPressedThisFrame)
         {
             if (isTyping)
