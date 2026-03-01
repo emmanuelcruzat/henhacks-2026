@@ -14,6 +14,16 @@ public class SceneLoader : MonoBehaviour
     public void QuitGame(){
         Application.Quit();
     }
+
+    public void Play()
+    {
+        SceneManager.LoadScene("Luke's Scene");
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,8 +33,8 @@ public class SceneLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Health === MaxHealth){
-            SceneManager.LoadScene('EndingScene');
-        }
+        /*if (Health == MaxHealth){
+            SceneManager.LoadScene("EndingScene");
+        }*/
     }
 }
