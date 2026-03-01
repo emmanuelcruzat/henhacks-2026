@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9022773869773323057}
   - component: {fileID: -8874183436204457130}
   m_Layer: 0
-  m_Name: Well III
+  m_Name: hall4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 67bb69f63e0240049a1bf8f738ae174c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78f6f755f145830468a76e6af3d00e81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,9 +107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   cost: 20
-  increaseAmount: 15
+  increaseAmount: 25
   timeBtwIncreases: 1
-  buildingType: 3
+  buildingType: 4
 --- !u!114 &9022773869773323057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,17 +123,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuildingClick
   info:
-    buildingName: Water Pump
-    buildingDescription: Burns natural gas to heat steam, turning a turbine create
-      electricity. The cleanest fossil fuel and is commonly used the world over.
-    icon: {fileID: 21300000, guid: 67bb69f63e0240049a1bf8f738ae174c, type: 3}
-    upgrades:
-    - upgradeName: Solar Power Plant
-      cost: 100
-      description: Harness the power of the sun to generate electrcity directly!
-        No emissions, just need sunlight and open space.
-      successorPrefab: {fileID: 4048704398046635324, guid: a6fea3386f3bdf442ac5c537300abd6d, type: 3}
-    currentTier: 2
+    buildingName: City Hall
+    buildingDescription: Apparently the new beeg dome on top lets you build Lvl 4
+      buildings.
+    icon: {fileID: 21300000, guid: 78f6f755f145830468a76e6af3d00e81, type: 3}
+    upgrades: []
+    currentTier: 3
 --- !u!61 &-8874183436204457130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -172,7 +167,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 1.6}
+    oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

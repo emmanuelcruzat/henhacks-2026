@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9022773869773323057}
   - component: {fileID: -8874183436204457130}
   m_Layer: 0
-  m_Name: Well II
+  m_Name: Well III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 3228a8f1ad2407246a30347a0ba334f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67bb69f63e0240049a1bf8f738ae174c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   cost: 20
-  increaseAmount: 8
+  increaseAmount: 15
   timeBtwIncreases: 1
   buildingType: 3
 --- !u!114 &9022773869773323057
@@ -123,17 +123,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuildingClick
   info:
-    buildingName: Water Well
-    buildingDescription: Burns oil to heat steam, turning a turbine to create electricity.
-      Cleaner than coal plants.
-    icon: {fileID: 21300000, guid: 3228a8f1ad2407246a30347a0ba334f5, type: 3}
+    buildingName: Water Pump
+    buildingDescription: Modern water extraction methods allow us to quickly extract
+      the stuff for our own use.
+    icon: {fileID: 21300000, guid: 67bb69f63e0240049a1bf8f738ae174c, type: 3}
     upgrades:
-    - upgradeName: Gas-Fired Power Plant
-      cost: 65
-      description: Burns natural gas to heat steam, turning a turbine create electricity.
-        The cleanest fossil fuel and is commonly used the world over.
-      successorPrefab: {fileID: 4048704398046635324, guid: b8133c43160a20648a59ca77fde929ce, type: 3}
-    currentTier: 1
+    - upgradeName: Water Tower
+      cost: 100
+      description: A water tower will store large amounts of water, providing vital
+        protection during droughts and dry seasons.
+      successorPrefab: {fileID: 4048704398046635324, guid: 9871d715c2730574b9673cf1069ebf9a, type: 3}
+    currentTier: 2
 --- !u!61 &-8874183436204457130
 BoxCollider2D:
   m_ObjectHideFlags: 0

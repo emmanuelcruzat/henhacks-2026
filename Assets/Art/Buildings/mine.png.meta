@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 5a36d32736dd18a4b9d42ae02af83072
+guid: b2dbb113cbf3c9e4abef32c96e30ca85
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6888756438569675735
-    second: New Piskel (1)_0
-  - first:
-      213: 9173839873224666002
-    second: New Piskel (1)_1
+      213: -202536217903286926
+    second: Mine-Big_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (1)_0
+      name: Mine-Big_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 305
-        height: 105
+        y: 14
+        width: 320
+        height: 257
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9249ede64883660a0800000000000000
-      internalID: -6888756438569675735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Piskel (1)_1
-      rect:
-        serializedVersion: 2
-        x: 319
-        y: 0
-        width: 66
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 29beed572c6005f70800000000000000
-      internalID: 9173839873224666002
+      spriteID: 27539b50262703df0800000000000000
+      internalID: -202536217903286926
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Piskel (1)_0: -6888756438569675735
-      New Piskel (1)_1: 9173839873224666002
+      Mine-Big_0: -202536217903286926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

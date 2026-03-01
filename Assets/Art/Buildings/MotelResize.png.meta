@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9030b98dfb005094db3974cadd294725
+guid: 0fe37680ab989af40aaf8b54d9862b0c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5435608014139152121
-    second: New Piskel (5)_0
+      213: -3627289534976220907
+    second: MotelResize_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (5)_0
+      name: MotelResize_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 505
+        width: 191
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f6d70590b82f6b40800000000000000
-      internalID: 5435608014139152121
+      spriteID: 511204ad26749adc0800000000000000
+      internalID: -3627289534976220907
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Piskel (5)_0: 5435608014139152121
+      MotelResize_0: -3627289534976220907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

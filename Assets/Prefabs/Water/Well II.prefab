@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9022773869773323057}
   - component: {fileID: -8874183436204457130}
   m_Layer: 0
-  m_Name: Well I
+  m_Name: Well II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   cost: 20
-  increaseAmount: 3
+  increaseAmount: 8
   timeBtwIncreases: 1
   buildingType: 3
 --- !u!114 &9022773869773323057
@@ -123,17 +123,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuildingClick
   info:
-    buildingName: 'Coal-Fired Power Plant '
-    buildingDescription: Burns coal to heat steam, turning a turbine to create electricity.
-      Gets the job done, but is terrible for the atmosphere...
-    icon: {fileID: 21300000, guid: 632cdf907a1342342851b3438d5e6b3c, type: 3}
+    buildingName: Water Well
+    buildingDescription: Do I really need to explain what a well is to you?
+    icon: {fileID: 21300000, guid: 3228a8f1ad2407246a30347a0ba334f5, type: 3}
     upgrades:
-    - upgradeName: Oil-Fired Power Plant
-      cost: 35
-      description: Burns oil to heat steam, turning a turbine to create electricity.
-        Cleaner than coal plants.
-      successorPrefab: {fileID: 4048704398046635324, guid: 7810b60c448fbe04080a0dfcf85266de, type: 3}
-    currentTier: 0
+    - upgradeName: Water Pump
+      cost: 65
+      description: Modern water extraction methods allow us to quickly extract the
+        stuff for our own use.
+      successorPrefab: {fileID: 4048704398046635324, guid: b8133c43160a20648a59ca77fde929ce, type: 3}
+    currentTier: 1
 --- !u!61 &-8874183436204457130
 BoxCollider2D:
   m_ObjectHideFlags: 0
