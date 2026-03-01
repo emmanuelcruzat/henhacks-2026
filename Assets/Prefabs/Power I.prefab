@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Building
   cost: 20
-  increaseAmount: 5
+  increaseAmount: 3
   timeBtwIncreases: 1
   buildingType: 5
 --- !u!114 &9022773869773323057

@@ -8,6 +8,8 @@ public class UpgradePopupUI : MonoBehaviour
     [Header("Root")]
     public GameObject panel;
 
+    public GameManager gameManager; // to check resources for upgrades (optional)
+
     // Optional fullscreen blocker behind popup to stop clicks
     public GameObject blocker;
 
@@ -23,10 +25,12 @@ public class UpgradePopupUI : MonoBehaviour
 
     private BuildingClick currentBuilding;
 
+    private int tempCost = 1000000; // placeholder, replace with actual cost from upgrade data
+
     void Awake()
     {
         if (closeButton != null) closeButton.onClick.AddListener(Hide);
-        if (upgradeButton != null) upgradeButton.onClick.AddListener(() => UpgradePressed(0));
+        if (upgradeButton != null) upgradeButton.onClick.AddListener(() => UpgradePressed());
 
         Hide();
     }
@@ -38,6 +42,14 @@ public class UpgradePopupUI : MonoBehaviour
         if (building == null || building.info == null) return;
 
         currentBuilding = building;
+        if(building.info.upgrades != null && building.info.upgrades.Length > 0)
+        {
+            tempCost = building.info.upgrades[0].cost; // get cost of first upgrade (index 0)
+        }
+        else
+        {
+            tempCost = 1000000; // no upgrades, set to very high cost to disable button
+        }
 
         if (blocker != null) blocker.SetActive(true);
 
@@ -87,6 +99,15 @@ public class UpgradePopupUI : MonoBehaviour
         }
     }
 
+private void Update() {
+    if (gameManager.gold >= tempCost)
+    {        upgradeButton.interactable = true;
+    }
+    else
+    {
+        upgradeButton.interactable = false;
+    }
+}
     public void Hide()
     {
         if (panel != null) panel.SetActive(false);
@@ -94,9 +115,11 @@ public class UpgradePopupUI : MonoBehaviour
         currentBuilding = null;
     }
 
-    public void UpgradePressed(int upgradeIndex)
+    public void UpgradePressed()
     {
         if (currentBuilding == null) return;
-        currentBuilding.ApplyUpgrade(upgradeIndex);
+        gameManager.gold -= currentBuilding.info.upgrades[0].cost; // deduct cost
+        currentBuilding.ApplyUpgrade(0);
+        
     }
 }

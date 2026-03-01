@@ -4980,6 +4980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePopupUI
   panel: {fileID: 740148747}
+  gameManager: {fileID: 472100186}
   blocker: {fileID: 1158073741}
   titleText: {fileID: 104716054}
   descText: {fileID: 2021949119}
@@ -14009,7 +14010,7 @@ MonoBehaviour:
         m_MethodName: BuyBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 451486412090925838, guid: 6032c770e3d41fd4d8a559cac0b5cd41, type: 3}
+          m_ObjectArgument: {fileID: 451486412090925838, guid: 68e59bc881fc92845a5d9319f566acd3, type: 3}
           m_ObjectArgumentAssemblyTypeName: Building, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
